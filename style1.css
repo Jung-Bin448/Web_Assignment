@@ -5,7 +5,7 @@ body {
 }
 
 @font-face {
-    font-family: 'Orengano';
+    font-family: 'Oregano';
     src: url(Oregano/Oregano-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -25,7 +25,7 @@ header nav:first-child {
     width: 200px;
     margin-top: 1%;
     float: middle;
-    background: rgb(206, 151, 215);
+    background-color: #991930;
     line-height: 50px;
     border-radius: 500px;
     text-align: center;
@@ -35,16 +35,68 @@ header nav:first-child {
 
 header nav:nth-child(2) {
     margin-left: auto;
-    height: 40px;
-    width: 200px;
+    height: 50px;
+    width: 400px;
     float: left;
-    background-color: plum;
+    background-color: #dae0ee;
     text-align: center;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 50px;
     border-radius: 0 0 20px 20px;
-    box-sizing: border-box;
+
 }
 
-.clear {
-    clear: both;
+/* Navigation Bar */
+section nav:first-child {
+    position: relative;
+    margin-left: 1%;
+    background-color: #292d31;
+    height: 700px;
+    width: 90px;
+    border-radius: 50px;
+}
+
+/* About Me Button */
+section nav:nth-child(2) {
+    position: absolute;
+    top: 20%;
+    left: 22px;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #991930;
+    border-radius: 50%;
+}
+
+section nav:nth-child(3) {
+    position: absolute;
+    top: 40%;
+    left: 22px;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #991930;
+    border-radius: 50%;
+}
+
+section nav:nth-child(4) {
+    position: absolute;
+    top: 60%;
+    left: 22px;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #991930;
+    border-radius: 50%;
+}
+
+section nav:nth-child(5) {
+    position: absolute;
+    top: 80%;
+    left: 22px;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #991930;
+    border-radius: 50%;
 }
