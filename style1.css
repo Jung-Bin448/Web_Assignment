@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oregano', cursive;
+}
+
+@font-face {
+    font-family: 'Orengano';
+    src: url(Oregano/Oregano-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 60px;
+    padding: 0 20px;
+}
+
+header nav:first-child {
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    margin-top: 1%;
+    float: middle;
+    background: rgb(206, 151, 215);
+    line-height: 50px;
+    border-radius: 500px;
+    text-align: center;
+    font-size: 34px;
+    box-sizing: border-box;
+}
+
+header nav:nth-child(2) {
+    margin-left: auto;
+    height: 40px;
+    width: 200px;
+    float: left;
+    background-color: plum;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
