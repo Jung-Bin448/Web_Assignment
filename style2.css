@@ -20,6 +20,7 @@ header {
     padding: 0 20px;
 }
 
+/* Portfolio Box */
 header nav:first-child {
     position: absolute;
     height: 50px;
@@ -36,6 +37,7 @@ header nav:first-child {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
+/* Hire Me */
 header nav:nth-child(2) {
     margin-left: auto;
     height: 50px;
@@ -66,7 +68,6 @@ section nav:nth-child(2) {
     position: absolute;
     top: 17%;
     left: 30px;
-    bottom: 0;
     width: 60px;
     height: 60px;
     background-color: #907b60;
@@ -78,17 +79,22 @@ section nav:nth-child(2) img {
     position: static;
 }
 
-/* Project */
+/* Project Button */
 section nav:nth-child(3) {
     position: absolute;
     top: 37%;
     left: 30px;
-    bottom: 0;
     width: 60px;
     height: 60px;
     background-color: #907b60;
     border-radius: 50%;
     box-shadow: 1px 0 15px 8px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section nav:nth-child(3) img {
+    display: block;
 }
 
 /* More */
@@ -96,12 +102,18 @@ section nav:nth-child(4) {
     position: absolute;
     top: 57%;
     left: 30px;
-    bottom: 0;
     width: 60px;
     height: 60px;
     background-color: #907b60;
     border-radius: 50%;
     box-shadow: 1px 0 15px 8px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section nav:nth-child(4) img {
+    display: block;
 }
 
 /* Contact */
@@ -109,12 +121,18 @@ section nav:nth-child(5) {
     position: absolute;
     top: 77%;
     left: 30px;
-    bottom: 0;
     width: 60px;
     height: 60px;
     background-color: #907b60;
     border-radius: 50%;
     box-shadow: 1px 0 15px 8px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section nav:nth-child(5) img {
+    display: block;
 }
 
 /* Background Shape */
@@ -215,6 +233,48 @@ section nav div:nth-child(5) {
     position: absolute;
 }
 
-section div nav:first-child {
-    
+/* Skill Section */
+
+/* Skill 1 */
+section nav:nth-child(10) {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 84%;
+    left: 17%;
+    border-radius: 50px;
+    background-color: #907b60;
+}
+
+/* Skill 2 */
+section nav:nth-child(11) {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 84%;
+    left: 37%;
+    border-radius: 50px;
+    background-color: #907b60;
+}
+
+/* Skill 3 */
+section nav:nth-child(12) {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 84%;
+    left: 57%;
+    border-radius: 50px;
+    background-color: #907b60;
+}
+
+/* Skill 4 */
+section nav:nth-child(13) {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 84%;
+    left: 77%;
+    border-radius: 50px;
+    background-color: #907b60;
 }
