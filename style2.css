@@ -64,7 +64,7 @@ section nav:first-child {
 /* About Me Button */
 section nav:nth-child(2) {
     position: absolute;
-    top: 20%;
+    top: 17%;
     left: 30px;
     bottom: 0;
     width: 60px;
@@ -74,10 +74,14 @@ section nav:nth-child(2) {
     box-shadow: 1px 0 15px 8px rgba(0, 0, 0, 0.8);
 }
 
+section nav:nth-child(2) img {
+    position: static;
+}
+
 /* Project */
 section nav:nth-child(3) {
     position: absolute;
-    top: 40%;
+    top: 37%;
     left: 30px;
     bottom: 0;
     width: 60px;
@@ -90,7 +94,7 @@ section nav:nth-child(3) {
 /* More */
 section nav:nth-child(4) {
     position: absolute;
-    top: 60%;
+    top: 57%;
     left: 30px;
     bottom: 0;
     width: 60px;
@@ -103,7 +107,7 @@ section nav:nth-child(4) {
 /* Contact */
 section nav:nth-child(5) {
     position: absolute;
-    top: 80%;
+    top: 77%;
     left: 30px;
     bottom: 0;
     width: 60px;
@@ -165,6 +169,7 @@ section nav:nth-child(9) {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
 }
 
+/* Name */
 section nav div:first-child {
     position: absolute;
     font-size: 80px;
@@ -174,6 +179,7 @@ section nav div:first-child {
     color: #20201a;
 }
 
+/* Position */
 section nav div:nth-child(2) {
     position: absolute;
     font-size: 35px;
@@ -182,20 +188,33 @@ section nav div:nth-child(2) {
     color: #2e8b57;
 }
 
+/* Box */
 section nav div:nth-child(3) {
     position: absolute;
     width: 1200px;
     height: 200px;
     top: 48%;
-    left: 60px;
-    font-size: 30px;
-    color: #d5b60a;
-    display: flex;
-    text-align: left;
-    padding-left: 18px;
-    padding-right: 19px;
-    padding-top: 10px;
+    left: 75px;
     background-color: #20201a;
     border-radius: 45px;
     opacity: 0.9;
+}
+
+/* Content Text */
+section nav div:nth-child(4) {
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    top: 49%;
+    left: 94px;
+    font-size: 25px;
+    color: #deca57;
+}
+
+section nav div:nth-child(5) {
+    position: absolute;
+}
+
+section div nav:first-child {
+    
 }
