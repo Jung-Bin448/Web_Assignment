@@ -20,6 +20,7 @@ header {
     padding: 0 20px;
 }
 
+/* Portfolio */
 header nav:first-child {
     position: absolute;
     height: 50px;
@@ -36,6 +37,7 @@ header nav:first-child {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
+/* Hire Me */
 header nav:nth-child(2) {
     margin-left: auto;
     height: 50px;
@@ -48,6 +50,11 @@ header nav:nth-child(2) {
     line-height: 50px;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+header nav:nth-child(2) a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Navigation Bar */

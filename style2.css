@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: #e9d9c7;
     font-family: 'didot-2';
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -50,6 +51,11 @@ header nav:nth-child(2) {
     line-height: 50px;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+header nav:nth-child(2) a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Navigation Bar */
@@ -193,19 +199,19 @@ section nav:nth-child(9) {
 section nav div:first-child {
     position: absolute;
     font-size: 80px;
-    width: 400px;
-    top: 5%;
-    left: 70px;
+    width: 607px;
+    top: 16%;
+    left: 13%;
     color: #20201a;
 }
 
 /* Position */
 section nav div:nth-child(2) {
     position: absolute;
-    font-size: 35px;
-    left: 70px;
-    top: 37%;
-    color: #2e8b57;
+    font-size: 45px;
+    left: 29%;
+    top: 35%;
+    color: #8e6826;
 }
 
 /* Box */
@@ -218,6 +224,8 @@ section nav div:nth-child(3) {
     background-color: #20201a;
     border-radius: 45px;
     opacity: 0.9;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
 }
 
 /* Content Text */
@@ -225,14 +233,16 @@ section nav div:nth-child(4) {
     position: absolute;
     width: 600px;
     height: 200px;
-    top: 49%;
-    left: 94px;
-    font-size: 25px;
+    top: 54%;
+    left: 10%;
+    font-size: 27px;
     color: #deca57;
 }
 
 section nav div:nth-child(5) {
     position: absolute;
+    top: 15px;
+    left: 55%;
 }
 
 /* Skill Section */
@@ -244,8 +254,24 @@ section nav:nth-child(10) {
     height: 60px;
     top: 84%;
     left: 17%;
+    overflow: hidden;
     border-radius: 50px;
     background-color: #907b60;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+section nav:nth-child(10) div {
+    font-size: 35px;
+    top: 11%;
+    left: 49px;
+}
+
+section nav:nth-child(10):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
 }
 
 /* Skill 2 */
@@ -255,8 +281,24 @@ section nav:nth-child(11) {
     height: 60px;
     top: 84%;
     left: 37%;
+    overflow: hidden;
     border-radius: 50px;
     background-color: #907b60;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+section nav:nth-child(11) div {
+    font-size: 35px;
+    top: 11%;
+    left: 49px;
+}
+
+section nav:nth-child(11):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
 }
 
 /* Skill 3 */
@@ -266,8 +308,24 @@ section nav:nth-child(12) {
     height: 60px;
     top: 84%;
     left: 57%;
+    overflow: hidden;
     border-radius: 50px;
     background-color: #907b60;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+section nav:nth-child(12) div {
+    font-size: 35px;
+    top: 11%;
+    left: 29px;
+}
+
+section nav:nth-child(12):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
 }
 
 /* Skill 4 */
@@ -277,8 +335,24 @@ section nav:nth-child(13) {
     height: 60px;
     top: 84%;
     left: 77%;
+    overflow: hidden;
     border-radius: 50px;
     background-color: #907b60;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+section nav:nth-child(13) div {
+    font-size: 35px;
+    top: 11%;
+    left: 25px;
+}
+
+section nav:nth-child(13):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
 }
 
 /* Home Button */
