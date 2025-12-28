@@ -52,6 +52,13 @@ header nav:nth-child(2) {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
 
+header nav:nth-child(2):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #e4dacf;
+    cursor: pointer;
+}
+
 header nav:nth-child(2) a {
     text-decoration: none;
     color: inherit;
@@ -80,6 +87,13 @@ section nav:nth-child(2) {
     box-shadow: 1px 0 15px 8px rgba(0, 0, 0, 0.8);
 }
 
+section nav:nth-child(2):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
+}
+
 section nav:nth-child(2) img {
     position: static;
 }
@@ -98,6 +112,14 @@ section nav:nth-child(3) {
     justify-content: center;
     align-items: center;
 }
+
+section nav:nth-child(3):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
+}
+
 section nav:nth-child(3) img {
     display: block;
 }
@@ -117,6 +139,13 @@ section nav:nth-child(4) {
     align-items: center;
 }
 
+section nav:nth-child(4):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
+}
+
 section nav:nth-child(4) img {
     display: block;
 }
@@ -134,6 +163,13 @@ section nav:nth-child(5) {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+section nav:nth-child(5):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
 }
 
 section nav:nth-child(5) img {
@@ -193,3 +229,27 @@ section nav:nth-child(9) {
 }
 
 /* NO Change up here */
+
+/* Home Button */
+section nav:nth-child(10) {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 88%;
+    left: 1430px;
+    background-color: #474130;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 1px 0 8px 4px rgba(0, 0, 0, 0.6);
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section nav:nth-child(10):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #645c46;
+    cursor: pointer;
+}

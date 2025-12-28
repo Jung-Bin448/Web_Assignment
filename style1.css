@@ -52,6 +52,13 @@ header nav:nth-child(2) {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
 
+header nav:nth-child(2):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #e4dacf;
+    cursor: pointer;
+}
+
 header nav:nth-child(2) a {
     text-decoration: none;
     color: inherit;
@@ -80,6 +87,13 @@ section nav:nth-child(2) {
     box-shadow: 1px 0 15px 8px rgba(0, 0, 0, 0.8);
 }
 
+section nav:nth-child(2):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
+}
+
 section nav:nth-child(2) img {
     position: static;
 }
@@ -98,6 +112,14 @@ section nav:nth-child(3) {
     justify-content: center;
     align-items: center;
 }
+
+section nav:nth-child(3):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
+}
+
 section nav:nth-child(3) img {
     display: block;
 }
@@ -117,6 +139,13 @@ section nav:nth-child(4) {
     align-items: center;
 }
 
+section nav:nth-child(4):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
+}
+
 section nav:nth-child(4) img {
     display: block;
 }
@@ -134,6 +163,13 @@ section nav:nth-child(5) {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+section nav:nth-child(5):hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+    cursor: pointer;
 }
 
 section nav:nth-child(5) img {
