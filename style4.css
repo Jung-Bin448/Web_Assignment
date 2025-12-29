@@ -59,6 +59,11 @@ header nav:nth-child(2):hover {
     cursor: pointer;
 }
 
+header nav:nth-child(2):active {
+    transform: translateY(1px);
+}
+
+
 header nav:nth-child(2) a {
     text-decoration: none;
     color: inherit;
@@ -94,6 +99,11 @@ section nav:nth-child(2):hover {
     cursor: pointer;
 }
 
+section nav:nth-child(2):active {
+    transform: translateY(1px);
+}
+
+
 section nav:nth-child(2) img {
     position: static;
 }
@@ -119,6 +129,11 @@ section nav:nth-child(3):hover {
     background-color: #a18a6b;
     cursor: pointer;
 }
+
+section nav:nth-child(3):active {
+    transform: translateY(1px);
+}
+
 
 section nav:nth-child(3) img {
     display: block;
@@ -146,6 +161,11 @@ section nav:nth-child(4):hover {
     cursor: pointer;
 }
 
+section nav:nth-child(4):active {
+    transform: translateY(1px);
+}
+
+
 section nav:nth-child(4) img {
     display: block;
 }
@@ -172,11 +192,18 @@ section nav:nth-child(5):hover {
     cursor: pointer;
 }
 
+section nav:nth-child(5):active {
+    transform: translateY(1px);
+}
+
+
 section nav:nth-child(5) img {
     display: block;
 }
 
 /* Background Shape */
+
+/* circle */
 section nav:nth-child(6) {
     position: absolute;
     width: 200px;
@@ -189,6 +216,7 @@ section nav:nth-child(6) {
     filter: blur(7px);
 }
 
+/* Weired Box */
 section nav:nth-child(7) {
     position: absolute;
     width: 400px;
@@ -201,6 +229,7 @@ section nav:nth-child(7) {
     filter: blur(7px);
 }
 
+/* Semi circle */
 section nav:nth-child(8) {
     position: absolute;
     width: 350px;
@@ -208,7 +237,7 @@ section nav:nth-child(8) {
     border: 40px solid #474130;
     border-radius: 50%;
     top:  30%;
-    left: 20%;
+    left: 28%;
     opacity: 0.6;
     filter: blur(7px);
 }
@@ -226,9 +255,45 @@ section nav:nth-child(9) {
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* NO Change up here */
+
+section nav:nth-child(9) div {
+    height: 500px;
+    width: 200px;
+    background-color: #a18a6b;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Video Box */
+section nav:nth-child(9) div:nth-child(1) {
+    height: 600px;
+    width: 500px;
+    border-radius: 30px;
+    opacity: 0.9;
+}
+
+section nav:nth-child(9) div:nth-child(1):hover {
+    transform: translate(0, -10px);
+    cursor: pointer;
+}
+
+/* Report Box */
+section nav:nth-child(9) div:nth-child(2) {
+    height: 600px;
+    width: 500px;
+    border-radius: 30px;
+    opacity: 0.9;
+}
+
+section nav:nth-child(9) div:nth-child(2):hover {
+    transform: translate(0, -10px);
+    cursor: pointer;
+}
 
 /* Home Button */
 section nav:nth-child(10) {
@@ -252,4 +317,8 @@ section nav:nth-child(10):hover {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
     background-color: #645c46;
     cursor: pointer;
+}
+
+section nav:nth-child(10):active {
+    transform: translateY(1px);
 }

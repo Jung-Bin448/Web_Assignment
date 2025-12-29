@@ -59,6 +59,10 @@ header nav:nth-child(2):hover {
     cursor: pointer;
 }
 
+header nav:nth-child(2):active {
+    transform: translateY(1px);
+}
+
 header nav:nth-child(2) a {
     text-decoration: none;
     color: inherit;
@@ -94,6 +98,10 @@ section nav:nth-child(2):hover {
     cursor: pointer;
 }
 
+section nav:nth-child(2):active {
+    transform: translateY(1px);
+}
+
 section nav:nth-child(2) img {
     position: static;
 }
@@ -118,6 +126,10 @@ section nav:nth-child(3):hover {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
     background-color: #a18a6b;
     cursor: pointer;
+}
+
+section nav:nth-child(3):active {
+    transform: translateY(1px);
 }
 
 section nav:nth-child(3) img {
@@ -146,6 +158,10 @@ section nav:nth-child(4):hover {
     cursor: pointer;
 }
 
+section nav:nth-child(4):active {
+    transform: translateY(1px);
+}
+
 section nav:nth-child(4) img {
     display: block;
 }
@@ -170,6 +186,10 @@ section nav:nth-child(5):hover {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
     background-color: #a18a6b;
     cursor: pointer;
+}
+
+section nav:nth-child(5):active {
+    transform: translateY(1px);
 }
 
 section nav:nth-child(5) img {

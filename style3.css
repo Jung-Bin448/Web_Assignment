@@ -59,6 +59,10 @@ header nav:nth-child(2):hover {
     cursor: pointer;
 }
 
+header nav:nth-child(2):active {
+    transform: translateY(1px);
+}
+
 header nav:nth-child(2) a {
     text-decoration: none;
     color: inherit;
@@ -94,6 +98,10 @@ section nav:nth-child(2):hover {
     cursor: pointer;
 }
 
+section nav:nth-child(2):active {
+    transform: translateY(1px);
+}
+
 section nav:nth-child(2) img {
     position: static;
 }
@@ -118,6 +126,10 @@ section nav:nth-child(3):hover {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
     background-color: #a18a6b;
     cursor: pointer;
+}
+
+section nav:nth-child(3):active {
+    transform: translateY(1px);
 }
 
 section nav:nth-child(3) img {
@@ -146,6 +158,10 @@ section nav:nth-child(4):hover {
     cursor: pointer;
 }
 
+section nav:nth-child(4):active {
+    transform: translateY(1px);
+}
+
 section nav:nth-child(4) img {
     display: block;
 }
@@ -170,6 +186,10 @@ section nav:nth-child(5):hover {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
     background-color: #a18a6b;
     cursor: pointer;
+}
+
+section nav:nth-child(5):active {
+    transform: translateY(1px);
 }
 
 section nav:nth-child(5) img {
@@ -253,6 +273,10 @@ section nav:nth-child(10):hover {
     cursor: pointer;
 }
 
+section nav:nth-child(10):active {
+    transform: translateY(1px);
+}
+
 /* NO Change up here */
 
 
@@ -277,6 +301,10 @@ section nav div:first-child {
     border-radius: 10px;
     background-color: #e9d9c7;
     opacity: 0.7;
+}
+
+section nav div:first-child:hover {
+    transform: translate(0, -10px) scale(1);
 }
 
 /* Text */
@@ -307,6 +335,10 @@ section nav div:nth-child(3) {
     opacity: 0.7;
 }
 
+section nav div:nth-child(3):hover {
+    transform: translate(0, -10px) scale(1);
+}
+
 /* Text */
 section nav div:nth-child(4) {
     position: absolute;
@@ -335,6 +367,10 @@ section nav div:nth-child(5) {
     opacity: 0.7;
 }
 
+section nav div:nth-child(5):hover {
+    transform: translate(0, -10px) scale(1);
+}
+
 /* Text */
 section nav div:nth-child(6) {
     position: absolute;
@@ -361,6 +397,10 @@ section nav div:nth-child(7) {
     border-radius: 10px;
     background-color: #e9d9c7;
     opacity: 0.7;
+}
+
+section nav div:nth-child(7):hover {
+    transform: translate(0, -10px) scale(1);
 }
 
 /* Text */
