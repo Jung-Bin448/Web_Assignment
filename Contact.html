@@ -3,9 +3,11 @@
     <head>
         <title>Contact</title>
         <link href="style5.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
+        
         <header>
             <nav>
                 Portfolio
@@ -16,9 +18,13 @@
                 </a>
             </nav>
         </header>
-        <section>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">☰</label>
+
+        <section class="sidebar">
             
-            <nav>
+            <nav class="moblie-nav">
                 <!-- Navigation Bar -->
             </nav>
 
@@ -50,16 +56,20 @@
                  </a>
             </nav>
 
-            <nav></nav>
-            <nav></nav>
-            <nav></nav>
+        </section>
+
+        <main class="page-content">
+
+            <nav class="shape-1"></nav>
+            <nav class="shape-2"></nav>
+            <nav class="shape-3"></nav>
 
             <!-- Content Box -->
-            <nav>
+            <div class="form-container">
 
                 <div>
                     <!-- Name Box -->
-                     <input type="text" name="Name" placeholder="Name :">
+                     <input type="text" name="Name" placeholder="Name :" required="required">
                 </div>
 
                 <div>
@@ -75,16 +85,13 @@
                 <!-- Submit Button -->
                 <button type="submit">Send Mail</button>
 
-            </nav>
+            </div>
 
-            <nav>
-                <!-- Home Button -->
-                <a href="Home.html">
-                    <img src="Home.png" alt="Home" width="30px">
-                </a>
-            </nav>
-
-        </section>
+            <!-- Home Button -->
+            <a href="Home.html" class="home-button">
+                <img src="Home.png" alt="Home" width="30px">
+            </a>
+        </main>
 
         <footer>
 

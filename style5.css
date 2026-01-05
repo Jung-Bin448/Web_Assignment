@@ -57,6 +57,7 @@ header nav:nth-child(2):hover {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
     background-color: #e4dacf;
     cursor: pointer;
+
 }header nav:nth-child(2):active {
     transform: translateY(1px);
 }
@@ -195,7 +196,7 @@ section nav:nth-child(5) img {
 }
 
 /* Background Shape */
-section nav:nth-child(6) {
+.shape-1 {
     position: absolute;
     width: 200px;
     height: 200px;
@@ -207,7 +208,7 @@ section nav:nth-child(6) {
     filter: blur(7px);
 }
 
-section nav:nth-child(7) {
+.shape-2 {
     position: absolute;
     width: 400px;
     height: 400px;
@@ -219,7 +220,7 @@ section nav:nth-child(7) {
     filter: blur(7px);
 }
 
-section nav:nth-child(8) {
+.shape-3 {
     position: absolute;
     width: 350px;
     height: 350px;
@@ -232,7 +233,7 @@ section nav:nth-child(8) {
 }
 
 /* Content Box */
-section nav:nth-child(9) {
+.form-container {
     position: absolute;
     top: 13%;
     bottom: 0;
@@ -247,7 +248,7 @@ section nav:nth-child(9) {
 }
 
 /* Home Button */
-section nav:nth-child(10) {
+.home-button {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -263,21 +264,21 @@ section nav:nth-child(10) {
     justify-content: center;
 }
 
-section nav:nth-child(10):hover {
+.home-button:hover {
     transform: translateY(-6px) scale(1.03);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
     background-color: #645c46;
     cursor: pointer;
 }
 
-section nav:nth-child(10):active {
+.home-button:active {
     transform: translateY(1px);
 }
 
 /* NO Change up here */
 
 /* Name Box */
-section nav div:first-child input {
+main div:first-child input {
     display: flex;
     position: absolute;
     width: 350px;
@@ -295,7 +296,7 @@ section nav div:first-child input {
 }
 
 /* Subject Box */
-section nav div:nth-child(2) input {
+main div:nth-child(2) input {
     display: flex;
     position: absolute;
     width: 450px;
@@ -313,7 +314,7 @@ section nav div:nth-child(2) input {
 }
 
 /* Message Box */
-section nav div:nth-child(3) textarea {
+main div:nth-child(3) textarea {
     display: flex;
     position: absolute;
     width: 84%;
@@ -333,7 +334,7 @@ section nav div:nth-child(3) textarea {
 }
 
 /* Submit Button */
-section nav button {
+main button {
     display: flex;
     position: absolute;
     width: 150px;
@@ -352,14 +353,14 @@ section nav button {
     font-family: inherit;
 }
 
-section nav button:hover {
+main button:hover {
     background: #907b60;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
 
-section nav button:active {
+main button:active {
     transform: translateY(1px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
@@ -380,6 +381,13 @@ footer nav:first-child {
     align-items: center;
 }
 
+footer nav:first-child:hover {
+    transform: translateY(-6px) scale(1.03);
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+}
+
 /* Insta */
 footer nav:nth-child(2) {
     position: absolute;
@@ -392,6 +400,17 @@ footer nav:nth-child(2) {
     background-color: #eee9df;
     justify-content: center;
     align-items: center;
+}
+
+footer nav:nth-child(2):hover {
+    transform: translateY(-6px) scale(1.03);
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+}
+
+footer nav:nth-child(2):hover img {
+    filter: invert(33%) sepia(98%) saturate(750%) hue-rotate(308deg) brightness(90%) contrast(90%);
 }
 
 /* Linkedin */
@@ -408,6 +427,17 @@ footer nav:nth-child(3) {
     align-items: center;
 }
 
+footer nav:nth-child(3):hover img {
+    filter: invert(42%) sepia(70%) saturate(1600%) hue-rotate(199deg) brightness(70%) contrast(90%);
+}
+
+footer nav:nth-child(3):hover {
+    transform: translateY(-6px) scale(1.03);
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+}
+
 /* Mail */
 footer nav:nth-child(4) {
     position: absolute;
@@ -420,4 +450,165 @@ footer nav:nth-child(4) {
     background-color: #eee9df;
     justify-content: center;
     align-items: center;
+}
+
+footer nav:nth-child(4):hover {
+    transform:  translateY(-6px) scale(1.03);
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    background-color: #a18a6b;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    position: relative;
+    z-index: 1001;
+    display: none;
+}
+
+
+
+/* Resonsive */
+@media screen and (max-width: 500px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section nav:first-child {
+        display: none !important;
+    }
+
+    .hamburger {
+        position: fixed;
+        top: 530px;
+        left: 10px;
+        display: block;
+        font-size: 40px;
+        color: #474130;
+        width: fit-content;
+        z-index: 1001;
+    }
+
+    .sidebar {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        background: #20201a;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 70%;
+        padding-top: 50px;
+        border-radius: 0 30px 30px 0;
+        z-index: 1000;
+    }
+
+    #menu-toggle:checked ~ .sidebar {
+        display: flex;
+        z-index: 1;
+        padding-left: 10px;
+        padding-top: 50px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        padding: 0;
+    }
+
+    header nav:first-child {
+        top: 0;
+        left: 170px;
+        width: 150px;
+        font-size: 28px;
+        margin-top: 15px;
+    }
+
+    header nav:nth-child(2) {
+        display: none;
+    }
+
+    .shape-1 {
+        width: 100px;
+        height: 100px;
+        left: 10%;
+        top: 7%;
+    }
+
+    .shape-2 {
+        width: 150px;
+        height: 150px;
+        left: 50%;
+        top: 10%;
+    }
+
+    .shape-3 {
+        width: 200px;
+        height: 200px;
+        left: 10%;
+        top: 35%;
+    }
+
+    .form-container {
+        position: fixed;
+        top: 100px;
+        left: 4%;
+        width: 447px;
+        height: 690px;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    main div:first-child input {
+        position: fixed;
+        width: 190px;
+        opacity: 0.8;
+        height: 40px;
+        left: 20px;
+    }
+    main div:nth-child(2) input {
+        position: fixed;
+        width: 200px;
+        opacity: 0.8;
+        height: 40px;
+        left: 20px;
+    }
+
+    main div:nth-child(3) textarea {
+        position: fixed;
+        width: 380px;
+        margin-bottom: 20px;
+        opacity: 0.8;
+        height: 190px;
+        left: 20px;
+    }
+
+    main button {
+        position: fixed;
+        margin: 10px;
+        width: 180px;
+        opacity: 1;
+        left: 235px;
+        top: 67%;
+    }
+
+    .home-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        left: 410px;
+        top: 83%;
+        z-index: 999;
+    }
+
 }
