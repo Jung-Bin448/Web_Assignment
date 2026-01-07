@@ -1,115 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Contact</title>
-        <link href="style5.css" type="text/css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Contact</title>
+    <link href="style5.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-    <body>
-        
-        <header>
-            <nav>
-                Portfolio
-            </nav>
-            <nav>
-                <a href="Contact.html">
-                    Hire Me
-                </a>
-            </nav>
-        </header>
+    <input type="checkbox" id="menu-toggle">
 
-        <input type="checkbox" id="menu-toggle">
+    <header class="main-header">
+        <div class="portfolio">Portfolio</div>
+        <a href="Contact.html" class="hire-me">Hire Me</a>
         <label for="menu-toggle" class="hamburger">☰</label>
+    </header>
 
-        <section class="sidebar">
-            
-            <nav class="moblie-nav">
-                <!-- Navigation Bar -->
-            </nav>
+    <main class="grid-container">
+        
+        <nav class="sidebar">
+            <a href="index.html" class="nav-item">
+                <img src="About-me.png" alt="About Me">
+            </a>
+            <a href="Project.html" class="nav-item">
+                <img src="Project.png" alt="Project">
+            </a>
+            <a href="More.html" class="nav-item">
+                <img src="More.png" alt="More">
+            </a>
+            <a href="Contact.html" class="nav-item">
+                <img src="Contact.png" alt="Contact">
+            </a>
+        </nav>
 
-            <nav>
-                <!-- About Me -->
-                <a href="index.html">
-                    <img src="About me.png" alt="About Me" width="60px">
-                </a>
-            </nav>
+        <div class="content-section">
+            <div class="shape circle-sm"></div>
+            <div class="shape blob-lg"></div>
+            <div class="shape ring-md"></div>
 
-            <nav>
-                <!-- Project -->
-                <a href="Project.html">
-                    <img src="Project.png" alt="Project" width="45px">
-                </a>
-            </nav>
-
-            <nav>
-                <!-- More -->
-                 <a href="More.html">
-                    <img src="More.png" alt="More" width="55px">
-                 </a>
-            </nav>
-
-            <nav>
-                <!-- Contact -->
-                 <a href="Contact.html">
-                    <img src="Contact.png" alt="Contact" width= "45px">
-                 </a>
-            </nav>
-
-        </section>
-
-        <main class="page-content">
-
-            <nav class="shape-1"></nav>
-            <nav class="shape-2"></nav>
-            <nav class="shape-3"></nav>
-
-            <!-- Content Box -->
-            <div class="form-container">
-                <form action="contact-grid">
-                    <!-- Name Box -->
-                    <input type="text" name="Name" placeholder="Name :" required="required">
-                
-                    <!-- Subject Box -->
-                     <input type="text" name="Subject" placeholder="Subject :">
-                
-                    <!-- Message Box -->
-                    <textarea type="text" placeholder="Your Message Here"></textarea>
-                
-                    <!-- Submit Button -->
-                    <button type="submit">Send Mail</button>
+            <div class="form-card">
+                <form class="contact-form">
+                    <input type="text" placeholder="Name :" required>
+                    <input type="text" placeholder="Subject :" required>
+                    <textarea placeholder="Your Message Here" required></textarea>
+                    
+                    <div class="form-footer">
+                        <button type="submit">Send Mail</button>
+                    </div>
                 </form>
+
+                <div class="social-footer">
+                    <a href="https://github.com/Jung-Bin448" target="_blank" rel="noopener noreferrer"><img src="Git-hub.png" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/binaya_448/" target="_blank" rel="noopener noreferrer"><img src="insta.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/binaya-jung-nepali-239149348/" target="_blank" rel="noopener noreferrer"><img src="linkedin.png" alt="LinkedIn"></a>
+                    <a href="mailto:binaya.20251023@nami.edu.np"><img src="mail.png" alt="Mail"></a>
+                </div>
             </div>
 
-            <!-- Home Button -->
-            <a href="Home.html" class="home-button">
-                <img src="Home.png" alt="Home" width="30px">
+            <a href="Home.html" class="home-icon">
+                <img src="Home.png" alt="Home" width="25">
             </a>
-        </main>
+        </div>
 
-        <footer>
-
-            <nav>
-                <!-- Git-Hub -->
-                <img src="Git-hub.png" alt="Git-Hub" width="60px" height="60px">
-            </nav>
-
-            <nav>
-                <!-- Insta -->
-                 <img src="insta.png" alt="Insta" width="50px" height="50px">
-            </nav>
-
-            <nav>
-                <!-- Linkedin -->
-                 <img src="linkedin.png" alt="Linkedin" width="50px" height="50px">
-            </nav>
-
-            <nav>
-                <!-- Mail -->
-                 <img src="mail.png" alt="Mail" width="50px" height="40px">
-            </nav>
-
-        </footer>
-
-    </body>
+    </main>
+</body>
 </html>

@@ -1,90 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Portfolio | About Me</title>
-        <link href="style2.css" type="text/css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | About Me</title>
+    <link href="style2.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-    <body>
+    <input type="checkbox" id="menu-toggle">
 
-        <input type="checkbox" id="menu-toggle">
+    <header class="main-header">
+        <div class="portfolio">Portfolio</div>
+        <a href="Contact.html" class="hire-me">Hire Me</a>
+        <label for="menu-toggle" class="hamburger">☰</label>
+    </header>
 
-        <header class="main-header">
-
-            <div class="portfolio">
-                Portfolio
-            </div>
-
-            <a href="Contact.html" class="hire-me">
-                Hire Me
+    <main class="grid-container">
+        
+        <nav class="sidebar">
+            <a href="index.html" class="nav-item">
+                <img src="About-me.png" alt="About Me">
             </a>
+            <a href="Project.html" class="nav-item">
+                <img src="Project.png" alt="Project">
+            </a>
+            <a href="More.html" class="nav-item">
+                <img src="More.png" alt="More">
+            </a>
+            <a href="Contact.html" class="nav-item">
+                <img src="Contact.png" alt="Contact">
+            </a>
+        </nav>
 
-            <label for="menu-toggle" class="hamburger">☰</label>
+        <section class="hero-section">
+            <div class="shape circle-sm"></div>
+            <div class="shape blob-lg"></div>
+            <div class="shape ring-md"></div>
 
-        </header>
-
-        <main class="grid-container">
-            
-            <nav class="sidebar">
-                <!-- sidebar -->
-
-                <!-- About Me -->
-                <a href="index.html" class="nav-item">
-                    <img src="About-me.png" alt="About Me">
-                </a>
-
-                <!-- Project -->
-                <a href="Project.html" class="nav-item">
-                    <img src="Project.png" alt="Project">
-                </a>
-
-                <!-- More -->
-                <a href="More.html" class="nav-item">
-                    <img src="More.png" alt="More">
-                </a>
-
-                <!-- Contact -->
-                <a href="Contact.html" class="nav-item">
-                    <img src="Contact.png" alt="Contact">
-                 </a>
-
-            </nav>
-
-            <section class="hero-section">
-
-                <div class="shape circle-sm"></div>
-                <div class="shape blob-lg"></div>
-                <div class="shape ring-md"></div>
-
-                <div class="content-card">
+            <div class="content-card">
+                
+                <div class="about-main-content">
                     <div class="text-section">
                         <h1 class="user-name">Binaya Jung Nepali</h1>
                         <h2 class="user-title">STUDENT</h2>
+                        
                         <div class="bio-box">
-                            <p>I'm a student who is eager to learn ans know about new things. I maight not have knowledge of many things but i try my best toknow new things.</p>
+                            <p>I'm a student who is eager to learn and know about new things. I might not have knowledge of many things but I try my best to know new things.</p>
                         </div>
                     </div>
 
                     <div class="profile-pic">
                         <img src="pp.png" alt="Profile pic" class="profile-img">
                     </div>
-
-                    <div class="skills">
-                        <div class="skill1">HTML</div>
-                        <div class="skill2">Python</div>
-                        <div class="skill3">Designing</div>
-                        <div class="skill4">Video-Edit</div>
-                    </div>
                 </div>
 
-                <a href="Home.html" class="home-icon">
-                    <img src="Home.png" alt="Home" width="25">
-                </a>
+                <div class="skills-grid">
+                    <div class="skill-tag">HTML</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">Designing</div>
+                    <div class="skill-tag">Video-Edit</div>
+                </div>
+            </div>
 
-            </section>
+            <a href="Home.html" class="home-icon">
+                <img src="Home.png" alt="Home" width="25">
+            </a>
+        </section>
 
-        </main>
-    </body>
+    </main>
+</body>
 </html>

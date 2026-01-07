@@ -50,11 +50,13 @@ body {
     color: #25291c;
     text-decoration: none;
     width: 400px;
+    height: 60px;
     text-align: center;
     font-size: 30px;
     line-height: 50px;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    margin-top: 0;
     transition: 0.3s;
 }
 
@@ -124,7 +126,7 @@ body {
 
 
 /* --- PROJECT SECTION --- */
-.project-section {
+.project-area {
     position: relative;
     padding-bottom: 50px;
 }
@@ -210,6 +212,7 @@ body {
     left: 10%;
     opacity: 0.4;
 }
+
 .blob-lg { width: 450px;
     height: 450px;
     background: var(--accent-brown);
@@ -219,7 +222,9 @@ body {
 }
 
 /* --- UI ELEMENTS --- */
-#menu-toggle { display: none; }
+#menu-toggle { 
+    display: none; 
+}
 
 .hamburger {
     display: none;
@@ -264,7 +269,7 @@ body {
 
 /* --- MOBILE RESPONSIVE --- */
 @media screen and (max-width: 1100px) {
-    
+
     .grid-container { 
         grid-template-columns: 1fr;
     }
