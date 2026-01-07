@@ -1,118 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>About Me</title>
+        <meta charset="UTF-8">
+        <title>Portfolio | About Me</title>
         <link href="style2.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <header>
-            <nav>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <header class="main-header">
+
+            <div class="portfolio">
                 Portfolio
-            </nav>
-            <nav>
-                <a href="Contact.html">
-                    Hire Me
-                </a>
-            </nav>
+            </div>
+
+            <a href="Contact.html" class="hire-me">
+                Hire Me
+            </a>
+
+            <label for="menu-toggle" class="hamburger">☰</label>
+
         </header>
-        <section>
+
+        <main class="grid-container">
             
-            <nav>
-                <!-- Navigation Bar -->
-            </nav>
+            <nav class="sidebar">
+                <!-- sidebar -->
 
-            <nav>
                 <!-- About Me -->
-                <a href="index.html">
-                    <img src="About me.png" alt="About Me" width="60px">
+                <a href="index.html" class="nav-item">
+                    <img src="About-me.png" alt="About Me">
                 </a>
-            </nav>
 
-            <nav>
                 <!-- Project -->
-                <a href="Project.html">
-                    <img src="Project.png" alt="Project" width="45px">
+                <a href="Project.html" class="nav-item">
+                    <img src="Project.png" alt="Project">
                 </a>
-            </nav>
 
-            <nav>
                 <!-- More -->
-                 <a href="More.html">
-                    <img src="More.png" alt="More" width="55px">
-                 </a>
-            </nav>
+                <a href="More.html" class="nav-item">
+                    <img src="More.png" alt="More">
+                </a>
 
-            <nav>
                 <!-- Contact -->
-                 <a href="Contact.html">
-                    <img src="Contact.png" alt="Contact" width= "45px">
+                <a href="Contact.html" class="nav-item">
+                    <img src="Contact.png" alt="Contact">
                  </a>
+
             </nav>
 
-            <nav></nav>
-            <nav></nav>
-            <nav></nav>
+            <section class="hero-section">
 
-            <!-- Content Box -->
-            <nav>
-                <div>
-                    Binaya Jung Nepali
+                <div class="shape circle-sm"></div>
+                <div class="shape blob-lg"></div>
+                <div class="shape ring-md"></div>
+
+                <div class="content-card">
+                    <div class="text-section">
+                        <h1 class="user-name">Binaya Jung Nepali</h1>
+                        <h2 class="user-title">STUDENT</h2>
+                        <div class="bio-box">
+                            <p>I'm a student who is eager to learn ans know about new things. I maight not have knowledge of many things but i try my best toknow new things.</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-pic">
+                        <img src="pp.png" alt="Profile pic" class="profile-img">
+                    </div>
+
+                    <div class="skills">
+                        <div class="skill1">HTML</div>
+                        <div class="skill2">Python</div>
+                        <div class="skill3">Designing</div>
+                        <div class="skill4">Video-Edit</div>
+                    </div>
                 </div>
 
-                <div>
-                    STUDENT
-                </div>
+                <a href="Home.html" class="home-icon">
+                    <img src="Home.png" alt="Home" width="25">
+                </a>
 
-                <div>
-                    <!-- For the text info -->
-                </div>
+            </section>
 
-                <div>
-                    I'm a student who is eager to learn and know about new things. 
-                    I might not have knowledge of many things but i try my best to get to know about new things.
-                </div>
-
-                <div>
-                    <!-- Photo -->
-                     <img src="pp.png" alt="Profile pic">
-                </div>
-            </nav>
-
-            <!-- Skill 1 -->
-            <nav>
-                <div>
-                    HTML
-                </div>
-            </nav>
-
-            <!-- Skill 2 -->
-            <nav>
-                <div>
-                    Python
-                </div>
-            </nav>
-
-            <!-- Skill 3 -->
-            <nav>
-                <div>
-                    Designing
-                </div>
-            </nav>
-
-            <!-- Skill 4 -->
-            <nav>
-                <div>
-                    Video-edit
-                </div>
-            </nav>
-
-            <nav>
-                <!-- Home Button -->
-                 <a href="Home.html">
-                    <img src="Home.png" alt="Home" width="30px">
-                 </a>
-            </nav>
-        </section>
+        </main>
     </body>
 </html>
