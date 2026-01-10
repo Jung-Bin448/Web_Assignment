@@ -133,12 +133,16 @@ body {
     position: relative;
 }
 
-.more-options-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    width: 100%;
-    transition: filter 0.4s ease, opacity 0.4s ease;
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: var(--dark-wood);
+    color: var(--bg-color);
+    border-radius: 50%;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .close-btn:hover {
@@ -146,36 +150,23 @@ body {
     background: #645c46;
 }
 
-
-.more-box {
-    text-decoration: none;
-    background-color: var(--accent-brown);
-    height: 450px;
+.expand-panel {
+    position: absolute;
+    inset: 40px;
+    background: rgba(233, 217, 199, 0.97);
     border-radius: 30px;
-    opacity: 0.9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.more-box span {
-    color: var(--dark-wood);
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.more-box:hover {
-    transform: translateY(-10px);
-    background-color: #a18a6b;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+    padding: 40px;
+    z-index: 10;
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .video-panel {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .youtube-frame {
@@ -186,27 +177,6 @@ body {
     border-radius: 20px;
     border: none;
 }
-
-.report-content {
-    height: 100%;
-    overflow-y: auto;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-
-#video-toggle:checked ~ .video-panel, #report-toggle:checked ~ .report-panel {
-    opacity: 1;
-    transform: scale(1);
-    pointer-events: auto;
-}
-
-#video-toggle:checked ~ .more-options-grid, #report-toggle:checked ~ .more-options-grid { 
-    filter:blur(10px); 
-    opacity:0.3;
-    pointer-events: none;
-}
-
 
 /* --- DECORATION --- */
 .shape { 
@@ -319,14 +289,6 @@ body {
         right: 20px;
     }
 
-    .more-options-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .more-box {
-        height: 220px;
-    }
-
     .expand-panel {
         inset: 20px;
         padding: 20px;
@@ -334,14 +296,6 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-
-    .more-options-grid { 
-        grid-template-columns: 1fr; 
-    }
-
-    .more-box { 
-        height: 250px; 
-    }
 
     .content-card {
         padding: 30px;
