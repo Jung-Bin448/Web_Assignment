@@ -13,7 +13,7 @@
     <header class="main-header">
         <div class="portfolio">Portfolio</div>
         <a href="Contact.html" class="hire-me">Hire Me</a>
-        <label for="menu-toggle" class="hamburger">☰</label>
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
     </header>
 
     <main class="grid-container">
@@ -39,10 +39,11 @@
             <div class="shape ring-md"></div>
 
             <div class="form-card">
-                <form class="contact-form">
-                    <input type="text" placeholder="Name :" required>
-                    <input type="text" placeholder="Subject :" required>
-                    <textarea placeholder="Your Message Here" required></textarea>
+                <form class="contact-form" action="mailto:binaya.20251023@nami.edu.np" method="post" enctype="text/plain">
+                    <input type="text" name="Name" placeholder="Name :" required>
+                    <input type="email" name="E-Mail" placeholder="E-mail :" required>
+                    <input type="text" name="Subject" placeholder="Subject :" required>
+                    <textarea name="Message" placeholder="Your Message Here" required></textarea>
                     
                     <div class="form-footer">
                         <button type="submit">Send Mail</button>
