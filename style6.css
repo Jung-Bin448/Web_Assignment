@@ -27,6 +27,7 @@ body {
     padding: 0 20px;
 }
 
+/* Portfolio Box */
 .portfolio {
     grid-column: 2;
     justify-self: center;
@@ -41,6 +42,7 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
+/* Hire Me Button */
 .hire-me {
     grid-column: 3;
     justify-self: end;
@@ -75,6 +77,7 @@ body {
     margin: 0 auto;
 }
 
+/* Navigation Bar */
 .sidebar {
     background-color: var(--sidebar-bg);
     height: 600px;
@@ -137,6 +140,7 @@ body {
     position: relative;
 }
 
+/* Back to More.html button */
 .close-btn {
     position: absolute;
     top: 15px;
@@ -182,7 +186,7 @@ body {
     border: none;
 }
 
-/* --- DECORATION --- */
+/* --- Background Shapes --- */
 .shape { 
     position: absolute;
     z-index: -1;
@@ -218,30 +222,30 @@ body {
     right: 5%; 
 }
 
-/* --- UI ELEMENTS --- */
+/* --- Hamburger Icon --- */
 #menu-toggle { 
     display: none; 
 }
 
 .hamburger {
-    display: none; /* Only show on mobile */
+    display: none;
     font-size: 35px;
     cursor: pointer;
     color: var(--dark-wood);
-    position: fixed; /* Fixed so it stays on top of header */
+    position: fixed;                           /* Fixed so it stays on top of header */
     left: 20px;
     top: 20px;
-    z-index: 5000; /* High z-index to fix "unclickable" issue */
+    z-index: 5000;                             /* High z-index to fix "unclickable" issue */
     background: rgba(233, 217, 199, 0.8);
     padding: 5px 10px;
     border-radius: 10px;
 }
 
 .home-icon {
-    position: fixed; /* Fixed pins it to the screen viewport */
+    position: fixed;
     width: 50px;
     height: 50px;
-    bottom: 30px; /* Fixed to bottom right */
+    bottom: 30px;                                   /* Fixed to bottom right */
     right: 30px;
     background-color: #474130;
     border-radius: 50px;
@@ -251,7 +255,7 @@ body {
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-    z-index: 4000; /* Stays above content and shapes */
+    z-index: 4000;                                   /* Stays above content and shapes */
 }
 
 .home-icon:hover {
@@ -274,12 +278,11 @@ body {
         position: fixed;
         left: -150px;
         top: 0;
-        height: 100vh; /* Full height on mobile */
+        height: 100vh;                                /* Full height on mobile */
         z-index: 4500;
         border-radius: 0 50px 50px 0;
     }
 
-    /* Fixed selector: Use global checkbox to move sidebar */
     #menu-toggle:checked ~ .grid-container .sidebar { 
         left: 0; 
     }
@@ -299,6 +302,7 @@ body {
     }
 }
 
+/* Made two responsive to make it smoother */
 @media screen and (max-width: 700px) {
 
     .content-card {

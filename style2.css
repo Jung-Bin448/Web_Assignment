@@ -1,5 +1,6 @@
+/* Color to use in my website */
 :root {
-    --bg-color: #e9d9c7;
+    --bg-color: #e9d9c7;            /*  made this to make it easy to use same color again and again */
     --dark-wood: #474130;
     --accent-brown: #907b60;
     --sidebar-bg: #20201a;
@@ -24,7 +25,7 @@ body {
 /* --- HEADER --- */
 .main-header {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr; 
     align-items: start;
     height: 80px;
     padding: 0 20px;
@@ -94,7 +95,7 @@ body {
     padding: 30px 0;
     box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.8);
     transition: left 0.4s ease;
-    z-index: 10;
+    z-index: 10;  /* it will bring the side bar little front then other */
 }
 
 .nav-item {
@@ -245,7 +246,7 @@ body {
     cursor: pointer;
 }
 
-/* --- UI ELEMENTS --- */
+/* --- Home Button --- */
 .home-icon {
     position: absolute;
     width: 50px;
@@ -275,6 +276,7 @@ body {
     transform: translateY(1px);
 }
 
+/* Hamburger Icon */
 .hamburger { 
     display: none; 
     font-size: 30px; 
@@ -333,6 +335,7 @@ body {
         border-radius: 80px;
     }
 
+    /* Toggle for Hamburger */
     #menu-toggle:checked ~ .grid-container .sidebar { 
         left: 0; 
     }

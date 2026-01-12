@@ -1,5 +1,6 @@
+/* Color to use in my website */
 :root {
-    --bg-color: #e9d9c7;
+    --bg-color: #e9d9c7;      /*  made this to make it easy to use same color again and again */
     --dark-wood: #474130;
     --accent-brown: #907b60;
     --sidebar-bg: #20201a;
@@ -263,6 +264,7 @@ body {
         transition: 0.3s ease;
     }
 
+    /* toggle for hamburger */
     #menu-toggle:checked ~ .grid-container .sidebar {
         left: 10px;
     }
